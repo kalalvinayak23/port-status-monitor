@@ -1,6 +1,6 @@
 # Port Status Monitoring using Ryu Controller
 
-## 📌 Project Description
+## 📌 Problem Statement
 This project demonstrates port status monitoring in Software Defined Networking (SDN) using a custom Ryu (os-ken) controller. The controller collects port statistics and detects link up/down events dynamically in a Mininet environment.
 
 ---
@@ -149,7 +149,14 @@ pingall
 - When port is brought up:
   - Connectivity is restored.
   - Ping succeeds again.
-
+    
+## 📊 Expected Output
+- Ping succeeds when all links are active
+- Ping fails when port `s1-eth2` is brought down
+- Ping succeeds again after the port is restored
+- Controller logs show port status changes
+- Flow table entries are installed in the switch
+- Port statistics are displayed continuously
 ---
 
 ## ✅ Conclusion
@@ -158,4 +165,14 @@ This project successfully demonstrates:
 - Detection of link failures (DOWN state)
 - Recovery after link restoration (UP state)
 - Continuous traffic statistics collection using SDN controller
+
+---
+
+## 📚 References
+1. Mininet Documentation - http://mininet.org/
+2. Open vSwitch Documentation - https://docs.openvswitch.org/
+3. OS-Ken Documentation - https://docs.openstack.org/os-ken/latest/
+4. OpenFlow Specification - https://opennetworking.org/
+
+
 
