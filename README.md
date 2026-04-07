@@ -93,7 +93,7 @@ Include screenshots of:
 
 ## 📂 Project Structure
 ```
-CN-Orange-problem/
+port-status-monitor/
 │── port_status_monitor.py
 │── README.md
 │── .gitignore
